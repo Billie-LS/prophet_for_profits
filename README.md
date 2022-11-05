@@ -209,13 +209,21 @@ Stratis Gavnoudias
 
 ### **askBCS assistants**
 
+Vijaya Reddy
+    [LinkedIn](https://www.linkedin.com/in/vijaya-reddy-209b041a3/)
+    [@GitHub](https://github.com/vjreddy2001)
+
+
+
+
+
+
+
+
 Roberto Salazar
     [LinkedIn](https://www.linkedin.com/in/roberto-salazar-reyna/)
     [@GitHub](https://github.com/rsalaza4)
     
-Vijaya Reddy
-    [LinkedIn](https://www.linkedin.com/in/vijaya-reddy-209b041a3/)
-    [@GitHub](https://github.com/vjreddy2001)
 
 Sean Myers
     [LinkedIn](https://www.linkedin.com/in/iamseanmyers/)
