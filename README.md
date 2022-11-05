@@ -1,56 +1,37 @@
 # **Columbia University Engineering, New York FinTech BootCamp** 
 # **August 2022 Cohort**
-## *Module 10, Challenge - assembling investment portfolios that are based on cryptocurrencies*
+## *Module 11, Challenge - *
 
-![Crypto Assets](images/image7.png)
 
-Objective - to simulate advisor in a major financial advisory firm. 
-Scenario - a novel approach to assembling cryptocurrency based investment portfolios utilizing atypical factors that may impact market and result in better performance is proposed. 
 
-Product - combine financial Python programming with unsupervised learning to create a Jupyter notebook that clusters cryptocurrencies by their performance in different time periods. Provide visualization/s, i.e. plot the results to demonstrate performance to the board.
+Objective - . 
+Scenario - . 
+
+Product - 
 
 
 ---
 ## **Methods**
 ### The code script analysis performed:
 
-    Import the Data from CSV file (provided in the starter code)
-        Read the “crypto_market_data.csv” file from the Resources folder into a DataFrame
+    Import the Data from CSV files (provided in the starter code)
+        Read the csv files from the Resources folder into a DataFrames
         
     Prepare the Data
         Generate the summary statistics, and use HvPlot to visualize your data inspect DataFrame contents
 
-![Crypto Assets](images/image1.png)
-
-
-    Find the Best Value for k Using the Original Data
-    Cluster Cryptocurrencies with K-means Using the Original Data
-    Optimize Clusters with Principal Component Analysis (PCA)
-    Find the Best Value for k Using the Principal Component Analysis (PCA) Data
-    Cluster the Cryptocurrencies with K-means Using the Principal Component Analysis (PCA) Data
-    Visualize and Compare the Results
-
 ___
 
-![InertiaElbows](images/image5.png)
+![imagename](imagepath)
 
-![Scatters](images/image6.png)
+
 
 
 ___
 
 Supplemental processing and analysis:
 
-Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
-
-Elbow Method and Silhouette Analysis -
-   distortion elbow and silhouette plots were supplemented for the analysis
-   
-Supplemental CSV file was downloaded from Kaggle, 'Top 100 Cryptocurrency 2022'
-[Kaggle](https://www.kaggle.com/datasets/majyhain/top-100-cryptocurrency-2022)
-   
-
-![Distortion Elbows - Yellowbrick](images/image4.png)
+Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained.  
 
 
 
@@ -109,7 +90,8 @@ Homebrew 3.5.10
 anaconda Command line client 1.10.0
 
     conda 22.9.0
-    Python 3.9.13
+    Python 3.8.13
+    pandas 1.5.1
 
 pip 22.2.2 from /opt/anaconda3/envs/jupyterlab_env/lib/python3.9/site-packages/pip (python 3.9)
 
@@ -131,20 +113,29 @@ git clone git@github.com:Billie-LS/ex_machina_crypto_learn.git
 Recommended operation via virtual environment, environment created and parameters used as below:
 
 ```python
-> conda create -n <name_env> python=3.9 anaconda
+> conda create -n <name_env> python=3.8 anaconda
 > conda activate <name_env>
 
+	> pip install --upgrade pip
+	> conda update conda
+	> conda install numpy cython -c conda-forge
+	> conda install matplotlib scipy pandas -c conda-forge
+	> conda install pystan -c conda-forge
+	> conda install -c anaconda ephem
+	> pip install scikit-learn
+	> conda install -c conda-forge prophet
+	> conda install -c conda-forge jupyterlab=3
+	> conda update jupyterlab
 	> pip install fire
 	> pip install questionary
-	> conda update jupyterlab
 	> pip install python-dotenv
-	> pip install alpaca-trade-api
+	> conda install -c pyviz hvplot
 	> conda install -c pyviz hvplot geoviews
-	> conda update conda
 	> conda update SQLAlchemy
 	> conda install -c conda-forge voila
 	> pip install pandas_datareader
-	> pip install yellowbrick
+	> python -m pip install ipykernel
+
 
 ```
 
@@ -196,50 +187,11 @@ Santiago Pedemonte
     [@GitHub](https://github.com/Santiago-Pedemonte)
 
 
-### **BootCamp Classmate assistance**
-
-Will Conyea 
-    [LinkedIn](https://www.linkedin.com/in/william-conyea-3666a7172/)
-    [@GitHub](https://github.com/willco-1)
-
-Stratis Gavnoudias 
-    [LinkedIn](https://www.linkedin.com/in/stratis-gavnoudias-465b527/)
-    [@GitHub](https://github.com/sgavnoudias)
-
-
 ### **askBCS assistants**
 
 Vijaya Reddy
     [LinkedIn](https://www.linkedin.com/in/vijaya-reddy-209b041a3/)
     [@GitHub](https://github.com/vjreddy2001)
-
-
-
-
-
-
-
-
-Roberto Salazar
-    [LinkedIn](https://www.linkedin.com/in/roberto-salazar-reyna/)
-    [@GitHub](https://github.com/rsalaza4)
-    
-
-Sean Myers
-    [LinkedIn](https://www.linkedin.com/in/iamseanmyers/)
-    [@GitHub](github.com/iamseanzie)
-
-Mounika Mamindla
-    [LinkedIn](https://www.linkedin.com/in/mounika-mamindla/)
-
-Charles Twitchell
-    [LinkedIn](https://www.linkedin.com/in/charlestwitchell/)
-    [@GitHub](https://github.com/CharlesTwitchell)
-
-Brandon Wong
-    [LinkedIn]()
-    [@GitHub]()
-
 
 ---
 
@@ -253,10 +205,6 @@ Brandon Wong
 
 [Geeks for Geeks](https://www.geeksforgeeks.org/elbow-method-for-optimal-value-of-k-in-kmeans/)
 
-[Geeks for Geeks](https://www.geeksforgeeks.org/how-to-rename-columns-in-pandas-dataframe/)
-
-[Geeks for Geeks](https://www.geeksforgeeks.org/python-pandas-split-strings-into-two-list-columns-using-str-split/#:~:text=split(),-View%20Discussion&text=Pandas%20provide%20a%20method%20to,from%20a%20single%20separated%20string.)
-
 [Statology](https://www.statology.org/pandas-combine-two-columns/)
 
 [oxylabs](https://oxylabs.io/blog/pandas-read-html-tables)
@@ -264,12 +212,6 @@ Brandon Wong
 [Shane Lynn](https://www.shanelynn.ie/pandas-drop-delete-dataframe-rows-columns/)
 
 [STACK OVERFLOW](https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe)
-
-[STACK OVERFLOW](https://stackoverflow.com/questions/25669588/convert-percent-string-to-float-in-pandas-read-csv)
-
-[STACK OVERFLOW](https://stackoverflow.com/questions/44225771/scraping-historical-data-from-yahoo-finance-with-python)
-
-[STACK OVERFLOW](https://stackoverflow.com/questions/8949252/why-do-i-get-attributeerror-nonetype-object-has-no-attribute-something)
 
 [LearnDataSci](https://www.learndatasci.com/tutorials/python-finance-part-yahoo-finance-api-pandas-matplotlib/)
 
