@@ -1,20 +1,25 @@
 # **Columbia University Engineering, New York FinTech BootCamp** 
 # **August 2022 Cohort**
-## *Module 11, Challenge - *
+## *Module 11, Challenge -  Google Colab and Time Series Analysis with FB Prophet*
 
+Objective - Tasked with analyzing a company's financial and user data in innovative manner to facilitate company grow.
 
+Scenario - As growth analyst at MercadoLibre, the most popular e-commerce site in Latin America, analyze the corporate financial and user data.  Identify potential patterns and predicatble features that may translate into the ability to successfully trade the stock.
 
-Objective - . 
-Scenario - . 
+Product - Jupyter notebook containing data preparation, analysis, and visualizations for all the time series data that the company needs to understand. Specifically, this file should contain the following:
 
-Product - 
+    Visual depictions of seasonality (as measured by Google Search traffic) that are of corporate interest.
+    evaluation of corporate stock price correlation to Google Search traffic.
+    Prophet forecast model that for hourly user search traffic predictions.
+    (Optional) A plot of a forecast for the company’s future revenue.
 
 
 ---
 ## **Methods**
 ### The code script analysis performed:
 
-    Import the Data from CSV files (provided in the starter code)
+    Initiate Google Colab
+    Import starter code and target Data from CSV files (provided in the starter code)
         Read the csv files from the Resources folder into a DataFrames
         
     Prepare the Data
@@ -22,18 +27,31 @@ Product -
 
 ___
 
-![imagename](imagepath)
+![image1](images/image1.png)
 
+![image3](images/image3.png)
 
+![image4](images/image4.png)
 
+![image5](images/image5.png)
+
+![image6](images/image6.png)
+
+![image7](images/image7.png)
+
+![image8](images/image8.png)
 
 ___
 
 Supplemental processing and analysis:
 
-Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained.  
+Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained; supplemental visulizations provided.  
 
+![image2](images/image2.png)
 
+![image9](images/image9.png)
+
+![image10](images/image10.png)
 
 ---
 ## **Technologies**
@@ -42,35 +60,25 @@ Beyond the scope of the assignment, the author sought to conduct additional anal
 
 This project leverages Jupyter Lab v3.4.4 and python v3.9.13 with the following packages:
 
-* [pandas](https://pandas.pydata.org/docs/) - software library written for the python programming language for data manipulation and analysis.
+* [PyStan](https://pystan.readthedocs.io/en/latest/#:~:text=PyStan%20is%20a%20Python%20interface,and%20high%2Dperformance%20statistical%20computation.) - from PyPI, is a Python interface to Stan, a package for Bayesian inference; Stan® is a state-of-the-art platform for statistical modeling and high-performance statistical computation.
+
+* [Prophet](https://pypi.org/project/fbprophet/#:~:text=Prophet%20is%20a%20procedure%20for,several%20seasons%20of%20historical%20data.) - is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects; works best with time series that have strong seasonal effects and several seasons of historical data.
 
 * [hvplot](https://hvplot.holoviz.org/getting_started/hvplot.html) - provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data into numerous formats listed within linked documentation.
 
+* [HoloViews](https://holoviews.org/) - is an open-source Python library designed to make data analysis and visualization seamless and simple.
+
+* [sys](https://docs.python.org/3/library/sys.html) - module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter.
+
+* [NumPy](https://numpy.org/doc/stable/user/absolute_beginners.html) - an open source Python library used for working with arrays, contains multidimensional array and matrix data structures with functions for working in domain of linear algebra, fourier transform, and matrices.
+
+* [pandas](https://pandas.pydata.org/docs/) - software library written for the python programming language for data manipulation and analysis.
+
+* [datetime](https://docs.python.org/3/library/datetime.html#:~:text=The%20datetime%20module%20supplies%20classes,General%20calendar%20related%20functions.) - supplies classes for manipulating dates and times with focus of implementation on efficient attribute extraction for output formatting and manipulation.
+
+* [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html) a state-based interface to matplotlib. It provides an implicit, MATLAB-like, way of plotting. It also opens figures on your screen, and acts as the figure GUI manager
+
 * [Path](https://pandas.pydata.org/docs/reference/api/pandas.concat.html) - from pathlib - Object-oriented filesystem paths, Path instantiates a concrete path for the platform the code is running on.
-
-* [K-Means](https://scikit-learn.org/stable/modules/clustering.html#k-means) - From scikitlearns cluster, K-Means clustering is one of the most widely used unsupervised machine learning algorithms that form clusters of data based on the similarity between data instances.
-
-* [PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html?highlight=sklearn+decomposition+import+pca) - From scikitlearns decomposition, principal component analysis (PCA); linear dimensionality reduction using Singular Value Decomposition(SVD) of the data to project it to a lower dimensional space, input data is centered but not scaled for each feature before applying the SVD.
-
-* [StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html?highlight=sklearn+preprocessing+import+standardscaler) - From scikitlearns preprocessing, standardize features by removing the mean and scaling to unit variance.
-
-
-For additional and / or supplemental processing and visulaization this project also makes use of the following packages:
-
-* [matplotlib.pyplot](https://matplotlib.org/stable/tutorials/introductory/pyplot.html) - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python; matplotlib.pyplot is a collection of functions that make matplotlib work like MATLAB
-
-* [seaborn](https://seaborn.pydata.org/tutorial/introduction) - Software library for making statistical graphics in Python. It builds on top of matplotlib and integrates closely with pandas data structures.
-
-* [KElbowVisualizer](https://www.scikit-yb.org/en/latest/api/cluster/elbow.html) - from Yellowbrick, implements the “elbow” method to help data scientists select the optimal number of clusters by fitting the model with a range of values for K.
-
-* [SilhouetteVisualizer](https://www.scikit-yb.org/en/latest/api/cluster/silhouette.html?highlight=SilhouetteVisualizer#silhouette-visualizer) - from Yellowbrick, utilize Silhouette Coefficient when the dataset ground-truth is unknown, computes the density of clusters modeled, score is computed by averaging the silhouette coefficient for each sample, computed as the difference between the average intra-cluster distance and the mean nearest-cluster distance for each sample, normalized by the maximum value. This produces a score between 1 and -1, where 1 is highly dense clusters and -1 is completely incorrect clustering.
-
-
-
-* [html5lib](https://pypi.org/project/html5lib/) - a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.
-
-
-
 
 
 ### **Hardware used for development**
@@ -93,6 +101,12 @@ anaconda Command line client 1.10.0
     Python 3.8.13
     pandas 1.5.1
 
+Colab specific operation utilization
+
+    Python version 3.7.15 (default, Oct 12 2022, 19:14:55) 
+    [GCC 7.5.0]
+    pandas version: 1.3.5
+
 pip 22.2.2 from /opt/anaconda3/envs/jupyterlab_env/lib/python3.9/site-packages/pip (python 3.9)
 
 
@@ -104,7 +118,7 @@ git version 2.37.2
  In the terminal, navigate to directory where you want to install this application from the repository and enter the following command
 
 ```python
-git clone git@github.com:Billie-LS/ex_machina_crypto_learn.git
+git clone git@github.com:Billie-LS/prophet_for_profits.git
 ```
 
 ---
@@ -136,16 +150,13 @@ Recommended operation via virtual environment, environment created and parameter
 	> pip install pandas_datareader
 	> python -m pip install ipykernel
 
-
 ```
 
 ___
 
-From terminal, the installed application is run through jupyter lab web-based interactive development environment (IDE) interface by typing at prompt:
+The installed application is run through Google Colab web-based interactive development environment (IDE) interface:
 
-```python
-  > jupyter lab
-```
+[GoogleColab](https://colab.research.google.com/)
 
 ---
 ## **Project requirements**
@@ -157,10 +168,10 @@ From terminal, the installed application is run through jupyter lab web-based in
 Version control can be reviewed at:
 
 ```python
-https://github.com/Billie-LS/ex_machina_crypto_learn
+https://github.com/Billie-LS/prophet_for_profits
 ```
 
-[repository](https://github.com/Billie-LS/Emergency_and_Retirement_Financial_Planner)
+[repository](https://github.com/Billie-LS/prophet_for_profits)
 
 
 ---
@@ -197,23 +208,11 @@ Vijaya Reddy
 
 ### **Additional references and or resources utilized**
 
+[STACK OVERFLOW](https://stackoverflow.com/questions/11346283/renaming-column-names-in-pandas)
+
+[STACK OVERFLOW](https://stackoverflow.com/questions/19573031/cant-push-to-github-because-of-large-file-which-i-already-deleted)
 
 
-[365DataScience](https://365datascience.com/tutorials/python-tutorials/pca-k-means/)
-
-[StackAbuse](https://stackabuse.com/k-means-elbow-method-and-silhouette-analysis-with-yellowbrick-and-scikit-learn/)
-
-[Geeks for Geeks](https://www.geeksforgeeks.org/elbow-method-for-optimal-value-of-k-in-kmeans/)
-
-[Statology](https://www.statology.org/pandas-combine-two-columns/)
-
-[oxylabs](https://oxylabs.io/blog/pandas-read-html-tables)
-
-[Shane Lynn](https://www.shanelynn.ie/pandas-drop-delete-dataframe-rows-columns/)
-
-[STACK OVERFLOW](https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe)
-
-[LearnDataSci](https://www.learndatasci.com/tutorials/python-finance-part-yahoo-finance-api-pandas-matplotlib/)
 
 ---
 ## **License**
